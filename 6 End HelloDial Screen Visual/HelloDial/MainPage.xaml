@@ -1,0 +1,45 @@
+﻿<Page
+    x:Class="HelloDial.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HelloDial"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" 
+    >
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >
+        <StackPanel Orientation="Vertical" VerticalAlignment="Top">
+            <TextBlock FontFamily="Segoe UI" FontSize="66.5" FontWeight="Bold" Foreground="#353535" 
+                   Margin="0,150,0,0" TextAlignment="Center" Text="HelloDial" />
+            <TextBlock FontFamily="Segoe UI" FontSize="32" FontWeight="Normal" Foreground="#353535" 
+                   Margin="0,75,0,0" TextWrapping="WrapWholeWords" TextAlignment="Center" Width="800"
+                   Text="Welcome to HelloDial. Here you will learn three ways you can integrate Dial into your UWP app." />
+        
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,210,0,0" >
+                <StackPanel Orientation="Vertical" >
+                    <Border Width="422" Height="422" BorderBrush="Black" BorderThickness="0" Tapped="InkBorder_Tapped">
+                        <Image Source="Assets/01mainpage_ink_dial.png" />
+                    </Border>
+                    <TextBlock FontFamily="Segoe UI" FontSize="32" FontWeight="Bold" Foreground="#353535" 
+                               Text="Ink with Dial" TextAlignment="Center" Margin="0,95,0,0" />
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="162,0,0,0" >
+                    <Border Width="422" Height="422" BorderBrush="Black" BorderThickness="0" Tapped="ItemBorder_Tapped">
+                        <Image Source="Assets/02mainpage_custom_item.png" />
+                    </Border>
+                    <TextBlock FontFamily="Segoe UI" FontSize="32" FontWeight="Bold" Foreground="#353535" 
+                               Text="Custom Dial Item" TextAlignment="Center" Margin="0,95,0,0" />
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="162,0,0,0" >
+                    <Border Width="422" Height="422" BorderBrush="Black" BorderThickness="0" Tapped="VisualBorder_Tapped">
+                        <Image Source="Assets/03mainpage_custom_visual.png" />
+                    </Border>
+                    <TextBlock FontFamily="Segoe UI" FontSize="32" FontWeight="Bold" Foreground="#353535" 
+                               Text="Custom Dial Visual" TextAlignment="Center" Margin="0,95,0,0" />
+                </StackPanel>
+                
+            </StackPanel>
+      </StackPanel>
+    </Grid>
+</Page>
